@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export',
+  output: 'export',
+  images: { unoptimized: true },
   productionBrowserSourceMaps: true,
   allowedDevOrigins: ['.amazonaws.com', '.builtwithrocket.new'],
   distDir: process.env.DIST_DIR || '.next',

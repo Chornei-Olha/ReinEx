@@ -43,20 +43,20 @@ const HomePage: React.FC = () => {
     <div className="min-h-screen bg-white">
       <Header />
       {/* Hero Section */}
-      <section className="container px-5 lg:px-10 relative lg:min-h-[970px] bg-white overflow-hidden py-10">
+      <section className="container px-5 lg:px-10 relative bg-white overflow-hidden py-10">
         <div className="border border-[#4d8fa7] rounded-[19px] px-6 py-2 inline-block mb-4">
           <span className="text-sm lg:text-lg font-semibold text-[#4d8fa7]">
             Reinheit trifft Verantwortung.
           </span>
         </div>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#508fa8] leading-tight mb-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#508fa8] leading-tight mb-4 sm:mb-16">
           ReinEx – Ihre vertrauenswürdige Reinigungsfirma mit System, Plan und Verantwortung
         </h1>
 
-        <div className="flex flex-col md:flex-row gap-8 md:h-[582px]">
+        <div className="flex flex-col md:flex-row gap-5">
           {/* Левая часть */}
           <div>
-            <div className="flex flex-col md:flex-row gap-8">
+            <div className="flex flex-col md:flex-row gap-5 md:h-[350px]">
               {/* Левая картинка */}
               <div className="flex justify-center">
                 <Image
@@ -69,7 +69,7 @@ const HomePage: React.FC = () => {
               </div>
 
               {/* Центральный контент */}
-              <div className="flex flex-col gap-10">
+              <div className="flex flex-col justify-between gap-8 sm:gap-0">
                 <div className="mx-auto md:mx-0 space-y-8 px-4 md:px-0">
                   <p className="text-base text-[#8a8a8a] leading-relaxed text-left">
                     Büroreinigung und Gewerbereinigung in Dresden – zuverlässig, strukturiert und
@@ -84,37 +84,35 @@ const HomePage: React.FC = () => {
                 </div>
 
                 <div className="align-left px-4 md:px-0">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
                     <div className="bg-gradient-to-r from-[#508fa8] to-[#4d8fa7] rounded-lg p-4 text-white relative">
-                      <div className="flex justify-between items-start">
-                        <div>
-                          <h3 className="text-4xl font-semibold mb-2">98,4 %</h3>
-                          <p className="text-lg font-semibold mb-2">Kunden empfehlen uns weiter</p>
-                          {/* <p className="text-sm text-[#e8e8e8]">Вписати цифри</p> */}
+                      <div className="flex flex-col">
+                        <div className="flex flex-row justify-between">
+                          <h3 className="text-4xl font-semibold mb-2">98,4 %</h3>{' '}
+                          <Image
+                            src="/images/img_icon_white_a700.svg"
+                            alt="Icon"
+                            width={46}
+                            height={46}
+                          />
                         </div>
-                        <Image
-                          src="/images/img_icon_white_a700.svg"
-                          alt="Icon"
-                          width={46}
-                          height={46}
-                        />
+                        <p className="text-lg font-semibold">Kunden empfehlen uns weiter</p>
                       </div>
                     </div>
                     <div className="bg-[#508fa8] rounded-lg p-4 text-white relative">
-                      <div className="flex justify-between items-start">
-                        <div>
+                      <div className="flex flex-col">
+                        <div className="flex flex-row justify-between">
                           <h3 className="text-4xl font-semibold mb-2">1.000+</h3>
-                          <p className="text-lg font-semibold mb-2">
-                            Gereinigte Einheiten in Dresden und Umgebung
-                          </p>
-                          {/* <p className="text-sm text-[#e8e8e8]">Вписати цифри</p> */}
+                          <Image
+                            src="/images/img_icon_white_a700_46x46.svg"
+                            alt="Icon"
+                            width={46}
+                            height={46}
+                          />
                         </div>
-                        <Image
-                          src="/images/img_icon_white_a700_46x46.svg"
-                          alt="Icon"
-                          width={46}
-                          height={46}
-                        />
+                        <p className="text-lg font-semibold">
+                          Gereinigte Einheiten in Dresden und Umgebung
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -148,13 +146,13 @@ const HomePage: React.FC = () => {
           </div>
 
           {/* Правая картинка */}
-          <div className="hidden md:block h-full">
+          <div className="hidden md:block">
             <Image
               src="/images/hero-right.png"
               alt="Google"
               width={800}
               height={882}
-              className="w-auto object-contain"
+              className="w-[30vw] h-auto object-contain"
             />
           </div>
 
