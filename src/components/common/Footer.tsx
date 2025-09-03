@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <Image
-                src="/images/img_reinex_name.png"
+                src="/images/logo_white.png"
                 alt="ReinEx Logo"
                 width={153}
                 height={51}

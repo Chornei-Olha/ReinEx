@@ -25,7 +25,7 @@ const Header: React.FC = () => {
         <div className="flex items-center">
           <Link href="/">
             <Image
-              src="/images/img_reinex_name.png"
+              src="/images/logo.png"
               alt="ReinEx Logo"
               width={153}
               height={51}

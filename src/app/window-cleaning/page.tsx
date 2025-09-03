@@ -90,8 +90,8 @@ const WindowCleaningPage: React.FC = () => {
               <Image
                 src="/images/img_20250522t131143493_1.png"
                 alt="Professional window cleaning"
-                width={507}
-                height={599}
+                width={1507}
+                height={1599}
                 className="object-cover"
               />
             </div>

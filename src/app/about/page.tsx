@@ -17,7 +17,7 @@ export default function AboutPage(): JSX.Element {
         </h1>
         {/* Content Container */}
         <div className="relative z-10 mx-auto px-3 pt-[100px] text-center">
-          <div className="absolute space-y-3 md:space-y-8 -top-[50px] md:-top-[130px] left-1/2 transform -translate-x-1/2">
+          <div className="absolute space-y-3 md:space-y-8 -top-[50px] md:-top-[130px] left-1/3 transform -translate-x-1/2">
             <h2 className="text-3xl lg:text-7xl font-semibold text-[#13263e] leading-none">
               Willkommen bei ReinEx
             </h2>
@@ -27,15 +27,15 @@ export default function AboutPage(): JSX.Element {
           </div>
         </div>
       </section>
-      <section className="container py-10">
+      <section className="container pt-16 pb-10">
         <div className="mx-auto">
           <div className="relative">
             <div className="absolute inset-0 z-10"></div>
             <Image
               src="/images/img_rectangle_1628.png"
               alt="Professional cleaning team"
-              width={1373}
-              height={628}
+              width={2373}
+              height={1628}
               className="w-fill h-auto object-cover"
             />
           </div>
@@ -60,8 +60,8 @@ export default function AboutPage(): JSX.Element {
             <Image
               src="/images/img_wowimage_professionalcleaningservicepersoncleaningoffice_1_1jpg.png"
               alt="Professional cleaning service team"
-              width={1373}
-              height={628}
+              width={2373}
+              height={1628}
               className="rounded-[20px] w-full h-auto object-cover"
             />
           </div>
@@ -105,8 +105,8 @@ export default function AboutPage(): JSX.Element {
                 <Image
                   src="/images/img_margin1.png"
                   alt="Office cleaning service"
-                  width={286}
-                  height={300}
+                  width={1286}
+                  height={1300}
                   className="w-full max-h-[250px] object-cover"
                 />
               </div>
@@ -120,8 +120,8 @@ export default function AboutPage(): JSX.Element {
                 <Image
                   src="/images/img_margin2.png"
                   alt="Window cleaning service"
-                  width={286}
-                  height={200}
+                  width={1286}
+                  height={1300}
                   className="w-full max-h-[250px] object-cover"
                 />
               </div>
@@ -135,8 +135,8 @@ export default function AboutPage(): JSX.Element {
                 <Image
                   src="/images/img_margin3.png"
                   alt="Moving cleaning service"
-                  width={286}
-                  height={300}
+                  width={1286}
+                  height={1300}
                   className="w-full max-h-[250px] object-cover"
                 />
               </div>
@@ -150,8 +150,8 @@ export default function AboutPage(): JSX.Element {
                 <Image
                   src="/images/img_margin4.png"
                   alt="Vacation rental cleaning service"
-                  width={286}
-                  height={300}
+                  width={1286}
+                  height={1300}
                   className="w-full max-h-[250px] object-cover"
                 />
               </div>

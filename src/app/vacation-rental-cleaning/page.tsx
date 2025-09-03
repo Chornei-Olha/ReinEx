@@ -20,21 +20,21 @@ const steps = [
   },
   {
     id: 2,
-    title: 'Individuelles Angebot erhalten',
-    quote: `“Basierend auf Ihrem Bedarf erstellen wir ein maßgeschneidertes Angebot.”`,
-    leftImage: '/images/img_battles_image_2.png',
-    rightImage: '/images/img_battles_image_1.png',
-    bottomLeft: 'Sauberes Büro',
-    bottomRight: 'Leistungsfähiges Team',
+    title: 'Gründliche Reinigung garantiert',
+    quote: `“Unsere Fachkräfte Achten Auf Jedes Detail Für Ein Perfektes Ergebnis.”`,
+    leftImage: '/images/img_battles_image_3.png',
+    rightImage: '/images/img_battles_image_4.png',
+    bottomLeft: 'ZUVERLÄSSIGER SERVICE',
+    bottomRight: 'MODERNE AUSRÜSTUNG',
   },
   {
     id: 3,
-    title: 'Professionelle Reinigung durchführen',
-    quote: `“Unser Team übernimmt die Reinigung termingerecht und gründlich.”`,
-    leftImage: '/images/img_battles_image_2.png',
-    rightImage: '/images/img_battles_image_1.png',
-    bottomLeft: 'Sauberes Büro',
-    bottomRight: 'Leistungsfähiges Team',
+    title: 'Flexibel Für Ihre Bedürfnisse',
+    quote: `“Ob Büro, Wohnung Oder Praxis – Wir Passen Uns Ihren Anforderungen An.”`,
+    leftImage: '/images/img_battles_image_5.png',
+    rightImage: '/images/img_battles_image_6.png',
+    bottomLeft: 'SCHNELLE TERMINFINDUNG',
+    bottomRight: 'KOMPETENTES TEAM',
   },
 ];
 const VacationRentalCleaningPage: React.FC = () => {
@@ -393,23 +393,23 @@ const VacationRentalCleaningPage: React.FC = () => {
 
             <div className="flex flex-row items-center justify-center lg:items-start relative">
               {/* Левая часть */}
-              <div className="mx-auto lg:ml-[120px] bg-[#4d8fa789] rounded-3xl py-[10px] lg:py-[80px] px-[10px] lg:px-[170px] flex items-center justify-center">
+              <div className="mx-auto lg:ml-[10px] bg-[#4d8fa789] rounded-3xl py-[10px] lg:py-[80px] px-[10px] lg:px-[170px] flex items-center justify-center">
                 <Image
                   src={step.leftImage}
                   alt="Left"
-                  width={506}
-                  height={345}
-                  className="rounded-sm w-full max-w-[506px]"
+                  width={2006}
+                  height={1645}
+                  className="rounded-2xl w-full lg:max-w-[506px]"
                 />
               </div>
 
-              <div className="mt-[-120px] lg:mt-0 lg:absolute bg-transparent rounded-sm py-[10px] lg:py-[80px] flex flex-col gap-4 lg:right-[-200px] items-center lg:items-end">
+              <div className="mt-[-120px] lg:mt-0 lg:absolute bg-transparent rounded-sm py-[10px] lg:py-[80px] flex flex-col gap-4 lg:right-[0px] items-center lg:items-end">
                 <Image
                   src={step.rightImage}
                   alt="Right"
-                  width={506}
-                  height={345}
-                  className="rounded-sm w-full max-w-[506px]"
+                  width={1506}
+                  height={1345}
+                  className="rounded-2xl w-full lg:max-w-[350px]"
                 />
                 <p className="text-gray-600 italic text-right">
                   Wir Werden Dafür Sorgen, Dass
@@ -421,7 +421,7 @@ const VacationRentalCleaningPage: React.FC = () => {
           </div>
 
           {/* Подписи */}
-          <div className="flex justify-between gap-10 mt-10 lg:mt-20">
+          <div className="flex justify-between gap-10 mt-10">
             <p className="text-base lg:text-2xl text-[#2c2c2c] uppercase">{step.bottomLeft}</p>
             <p className="text-base lg:text-2xl text-[#2c2c2c] uppercase text-right">
               {step.bottomRight}
@@ -429,7 +429,7 @@ const VacationRentalCleaningPage: React.FC = () => {
           </div>
 
           {/* Стрелки */}
-          <div className="flex justify-center space-x-4 mt-10">
+          <div className="flex justify-center space-x-16 mt-5">
             <button onClick={handlePrev}>
               <Image src="/images/img_arrowbackios.svg" alt="Previous" width={20} height={20} />
             </button>

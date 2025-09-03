@@ -43,13 +43,13 @@ const HomePage: React.FC = () => {
     <div className="min-h-screen bg-white">
       <Header />
       {/* Hero Section */}
-      <section className="container px-5 lg:px-10 relative min-h-screen bg-white overflow-hidden py-10">
+      <section className="container px-5 lg:px-10 relative lg:min-h-[970px] bg-white overflow-hidden py-10">
         <div className="border border-[#4d8fa7] rounded-[19px] px-6 py-2 inline-block mb-4">
           <span className="text-sm lg:text-lg font-semibold text-[#4d8fa7]">
             Reinheit trifft Verantwortung.
           </span>
         </div>
-        <h1 className="text-4xl lg:text-6xl font-semibold text-[#508fa8] leading-tight mb-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-[#508fa8] leading-tight mb-4">
           ReinEx – Ihre vertrauenswürdige Reinigungsfirma mit System, Plan und Verantwortung
         </h1>
 
@@ -58,13 +58,13 @@ const HomePage: React.FC = () => {
           <div>
             <div className="flex flex-col md:flex-row gap-8">
               {/* Левая картинка */}
-              <div className="flex justify-center md:h-full">
+              <div className="flex justify-center">
                 <Image
                   src="/images/hero-left.png"
                   alt="Google"
-                  width={244}
-                  height={523}
-                  className="h-[400px] md:h-full w-auto object-contain"
+                  width={1000}
+                  height={1000}
+                  className="h-[400px] md:h-full w-auto object-cover"
                 />
               </div>
 
@@ -124,10 +124,10 @@ const HomePage: React.FC = () => {
 
             {/* Нижний текст */}
             <div className="mx-auto md:mx-0 text-left px-4 md:px-0">
-              <h2 className="text-2xl font-semibold text-[#508fa8] mt-10 md:mt-[74px] mb-6">
+              <h2 className="text-2xl font-semibold text-[#508fa8] mt-10 md:mt-[74px] mb-3">
                 Willkommen bei ReinEx Ihr Partner für Reinheit!
               </h2>
-              <p className="text-base text-[#8a8a8a] leading-relaxed mb-8">
+              <p className="text-base text-[#8a8a8a] leading-relaxed mb-5">
                 Unsere Mission ist es, Lebens- und Arbeitsräume sauberer, gesünder und angenehmer zu
                 gestalten. Dabei setzen wir auf modernste Technologien und umweltfreundliche
                 Reinigungsmittel.
@@ -152,8 +152,8 @@ const HomePage: React.FC = () => {
             <Image
               src="/images/hero-right.png"
               alt="Google"
-              width={414}
-              height={582}
+              width={800}
+              height={882}
               className="w-auto object-contain"
             />
           </div>
@@ -163,8 +163,8 @@ const HomePage: React.FC = () => {
             <Image
               src="/images/hero-right.png"
               alt="Google"
-              width={414}
-              height={582}
+              width={800}
+              height={882}
               className="w-full h-[auto] object-contain"
             />
           </div>
@@ -173,36 +173,35 @@ const HomePage: React.FC = () => {
       {/* Professional Service Section */}
       <section className="container px-5 lg:px-10 py-10">
         <div className="mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left Content - Images */}
-            <div className="relative">
-              <div className="grid grid-cols-2 gap-4">
+            <div className="relative h-full">
+              <div className="grid grid-cols-2 gap-4 h-full">
                 <Image
                   src="/images/img_image_1_434x267.png"
                   alt="Cleaning Service 1"
-                  width={434}
-                  height={267}
+                  width={1034}
+                  height={1067}
+                  className="h-full"
                 />
-                <div className="space-y-4">
+                <div className="flex flex-col justify-between">
                   <Image
                     src="/images/img_image_2_260x267.png"
                     alt="Cleaning Service 2"
-                    width={260}
-                    height={267}
+                    width={834}
+                    height={867}
                   />
-                  <div className="relative">
-                    <Image
-                      src="/images/img_image_150x267.png"
-                      alt="Cleaning Service 3"
-                      width={260}
-                      height={267}
-                    />
-                  </div>
+                  <Image
+                    src="/images/img_image_150x267.png"
+                    alt="Cleaning Service 3"
+                    width={834}
+                    height={867}
+                  />
                 </div>
               </div>{' '}
             </div>
             {/* Right Content */}
-            <div className="space-y-8">
+            <div className="space-y-5">
               <div className="inline-flex items-center px-6 py-2 bg-white border-2 border-[#4D8FA7] rounded-full">
                 <span className="text-sm lg:text-lg font-semibold text-[#4D8FA7]">
                   Connecting Homes with Trusted Hands
@@ -216,7 +215,7 @@ const HomePage: React.FC = () => {
                 Erfahrung in der Reinigungsbranche garantieren wir Qualität und Zuverlässigkeit bei
                 jeder Reinigung.
               </p>
-              <div className="space-y-4">
+              <div className="space-y-2">
                 <div className="flex items-center">
                   <span className="text-base lg:text-lg font-semibold text-gray-900">
                     ✔️ Individuelle Reinigungslösungen für jedes Zuhause
@@ -284,8 +283,8 @@ const HomePage: React.FC = () => {
                   <Image
                     src="/images/cleaning1.png"
                     alt="Office cleaning background"
-                    width={199}
-                    height={190}
+                    width={1600}
+                    height={1600}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute top-4 right-4">
@@ -300,15 +299,15 @@ const HomePage: React.FC = () => {
                   <Image
                     src="/images/cleaning2.png"
                     alt="Vacation rental cleaning background"
-                    width={199}
-                    height={190}
+                    width={600}
+                    height={600}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute top-4 right-4">
                     <Image src="/images/img_icon.svg" alt="Icon" width={62} height={54} />
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#508fa899] to-[#4d8fa799] rounded-b-3xl p-4">
-                    <h3 className="text-sm lg:text-lg font-semibold text-white leading-tight">
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#508fa899] to-[#4d8fa799] rounded-b-3xl py-1 px-4">
+                    <h3 className="text-sm lg:text-lg font-semibold text-white leading-none">
                       Ferienwohnungs reinigung
                     </h3>
                   </div>
@@ -318,8 +317,8 @@ const HomePage: React.FC = () => {
                   <Image
                     src="/images/cleaning3.png"
                     alt="Moving cleaning"
-                    width={199}
-                    height={190}
+                    width={600}
+                    height={600}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute top-4 right-4">
@@ -334,8 +333,8 @@ const HomePage: React.FC = () => {
                   <Image
                     src="/images/cleaning4.png"
                     alt="Window cleaning"
-                    width={199}
-                    height={190}
+                    width={600}
+                    height={600}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute top-4 right-4">
@@ -540,8 +539,8 @@ const HomePage: React.FC = () => {
                 <Image
                   src="/images/yellow.png"
                   alt="Happy customer"
-                  width={250}
-                  height={350}
+                  width={1250}
+                  height={1350}
                   className="rounded-lg w-[250px] h-full object-cover max-sm:w-full max-sm:h-auto"
                 />
               </div>
@@ -654,8 +653,8 @@ const HomePage: React.FC = () => {
               <Image
                 src="/images/bgr.png"
                 alt="Cleaning professional"
-                width={364}
-                height={500}
+                width={864}
+                height={800}
                 className="w-full max-w-[364px] mx-auto relative z-0"
               />
 
@@ -663,8 +662,8 @@ const HomePage: React.FC = () => {
               <Image
                 src="/images/img_20250522t095758599_1.png"
                 alt="Cleaning professional"
-                width={207}
-                height={277}
+                width={864}
+                height={800}
                 className="w-full max-w-[207px] mx-auto absolute inset-0 mt-auto z-10"
               />
             </div>
