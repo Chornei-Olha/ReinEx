@@ -306,7 +306,7 @@ const HomePage: React.FC = () => {
                   <div className="absolute top-4 right-4">
                     <Image src="/images/img_icon.svg" alt="Icon" width={62} height={54} />
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#508fa899] to-[#4d8fa799] rounded-b-3xl py-1 px-4">
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#508fa899] to-[#4d8fa799] rounded-b-3xl py-4 sm:py-1 px-4">
                     <h3 className="text-sm lg:text-lg font-semibold text-white leading-none">
                       Ferienwohnungs reinigung
                     </h3>

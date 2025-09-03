@@ -19,7 +19,7 @@ const Header: React.FC = () => {
   const [openForm, setOpenForm] = useState(false);
 
   return (
-    <header className="container px-5 lg:px-10 bg-white shadow-sm mt-[35px] py-4 relative z-50">
+    <header className="container px-5 lg:px-10 bg-white shadow-sm py-4 relative z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
