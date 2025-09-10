@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
               <div className="text-[#ffffff] text-sm leading-6">
                 <p className="mb-2">24/7 Kundensupport – Wir sind jederzeit für Sie da!</p>
                 <p className="mb-2 underline">
-                  <a href="tel:+491734983416">+49 173 4983416</a>
+                  <a href="tel:+491734983416">+49 175 7182453</a>
                 </p>
                 <p className="mb-2 underline">
                   <a href="mailto:info@reinigungex.com">info@reinigungex.com</a>
